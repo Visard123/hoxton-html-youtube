@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+image{
+    width:100%;
+}
+body{
+    background-color: rgb(126, 126, 161);
+}
+header{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:#ffffff ;
+    height: 50px;
+    position: sticky;
+    width: 100vmax;
+    
+
+}
+
+header .left-logos{
+    display: grid;
+  grid-auto-flow: column;
+    gap: 20px;
+    place-items: start;
+    justify-content: start;
+    align-content: center;
+    padding: 10px;
+   
+}
+header .left-logos .you-tube{
+    padding-top: 3px;
+}
+header .search-microphone{
+    display: grid;
+    grid-auto-flow: column;
+}
+header .search-bar{
+    justify-self:center;
+    place-self: center;
+    width: 400px;
+    height: 30px;
+   
+  
+}
+header .right-logos{
+    
+}
+main .section-all{
+    display: grid;
+    grid-template-columns: 232px 1fr;
+}
+main .left-sidebar{
+    padding: 10px;
+    background-color: crimson;
+
+
+}
+main .right-part{
+    display: grid;
+    grid-auto-flow: row;
+}
