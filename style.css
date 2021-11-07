@@ -4,12 +4,15 @@
     box-sizing: border-box;
 
 }
+
 image{
     width:100%;
 }
 body{
     background-color: rgb(126, 126, 161);
+    font-family: sans-serif;
 }
+/* header section */
 header{
     display: grid;
     grid-auto-flow: column;
@@ -93,11 +96,15 @@ main .section-all{
     display: grid;
     grid-template-columns: 232px 1fr;
 }
+/* left sidebar section */
 main .left-sidebar{
     display: grid;
     grid-auto-flow: row;
     padding-top: 5px;
     background-color:white;
+    max-height: 1200px;
+
+    overflow:auto;
 }
 main .left-sidebar .home{
     display: grid;
@@ -109,8 +116,7 @@ main .left-sidebar .home{
     gap:25px;
     padding-left: 26px;
 }
-
-
+ 
 main .left-sidebar .explore{
     display: grid;
     grid-auto-flow: column;
@@ -122,9 +128,14 @@ main .left-sidebar .explore{
     padding-left: 26px;
    
 }
-.left-sidebar .explore:hover{
-  background-color: rgb(224, 34, 224);
+.home:hover{
+background-color: grey;
 }
+.left-sidebar .explore:hover{
+    background-color: rgb(236, 232, 232);
+}
+
+
 .explore img{
     margin-top: -3px;
     
@@ -136,7 +147,7 @@ main .left-sidebar .explore{
 main .left-sidebar .subscription{
     display: grid;
     grid-auto-flow: column;
-    background-color:rgb(216, 131, 131);
+   
     justify-content: start;
     height: 40px; 
     padding: 10px;
@@ -152,14 +163,14 @@ main .left-sidebar .subscription{
 main .middle-items{
     background-color:white;
     
-    border-top: rgb(14, 0, 94) 6px solid;
+    border-top: 1px solid rgb(199, 191, 191);
     margin-top: 5px;
     padding-top: 8px;
 }
 .middle-items .library{
     display: grid;
     grid-auto-flow: column;
-    background-color:rgb(211, 102, 102);
+   
     justify-content: start;
     height: 40px; 
     padding: 10px;
@@ -169,7 +180,7 @@ main .middle-items{
 .middle-items .history{
     display: grid;
     grid-auto-flow: column;
-    background-color:rgb(184, 113, 108);
+
     justify-content: start;
     height: 40px; 
     padding: 10px;
@@ -209,20 +220,97 @@ main .middle-items{
     gap:25px;
     padding-left: 26px;
 }
+.subscription-items h2{
+    font-size: 15px;
+    font-weight: 400px;
+    padding: 10px;
+    left: 0;
+    margin-left: 15px;
+    text-align: start;
+    color: rgb(148, 144, 144);
+}
 main .subscription-items{
     background-color:white;
-   
-    border-top: rgb(14, 0, 94) 6px solid;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(199, 191, 191);
     margin-top: 5px;
     padding-top: 8px;
 }
+.subscription-items .top-channel{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:white;
+    justify-content: start;
+    height: 40px; 
+    padding: 10px;
+    gap:25px;
+    padding-left: 26px;
 
+}
+.subscription-items img{
+    width: 25px;
+    border-radius: 50px;
+}
+.subscription-items .hoxton{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:white;
+    justify-content: start;
+    height: 40px; 
+    padding: 10px;
+    gap:25px;
+    padding-left: 26px;
+
+}
+.subscription-items .ngop{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:white;
+    justify-content: start;
+    height: 40px; 
+    padding: 10px;
+    gap:25px;
+    padding-left: 26px;
+
+}
+.subscription-items .koha-jone{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:white;
+    justify-content: start;
+    height: 40px; 
+    padding: 10px;
+    gap:25px;
+    padding-left: 26px;
+
+}
+.subscription-items .enigma{
+    display: grid;
+    grid-auto-flow: column;
+    background-color:white;
+    justify-content: start;
+    height: 40px; 
+    padding: 10px;
+    gap:25px;
+    padding-left: 26px;
+
+}
 main .more-items{
     background-color:white;
    
-    border-top: rgb(14, 0, 94) 6px solid;
+    border-top: 1px solid rgb(199, 191, 191);
     margin-top: 5px;
     padding-top: 8px;
+
+}
+.more-items h2{
+    font-size: 15px;
+    font-weight: 400px;
+    padding: 10px;
+    left: 0;
+    margin-left: 15px;
+    text-align: start;
+    color: rgb(148, 144, 144);
 
 }
 .more-items .gaming{
@@ -284,9 +372,10 @@ main .more-items{
 main .technical-items{
     background-color:white;
    
-    border-top: rgb(14, 0, 94) 6px solid;
+    border-top: 1px solid rgb(199, 191, 191);
     margin-top: 5px;
     padding-top: 8px;
+    padding-bottom: 10px;
 }
 .technical-items .settings{
     display: grid;
@@ -339,9 +428,16 @@ main .press-advertise ul{
     list-style: none;
     text-align: start;
     padding-left: 20px;
-    border-top: rgb(14, 0, 94) 6px solid;
+    border-top: 1px solid rgb(199, 191, 191);
+    padding-bottom: 20px;
 
 }
+.press-advertise ul li{
+    color: #606060;;
+    font-size: 13px;
+
+}
+
 main .terms-conditions ul{
      display: grid;
     grid-template-columns: auto auto auto ;
@@ -349,19 +445,41 @@ main .terms-conditions ul{
     list-style: none;
     text-align: start;
     padding-left: 20px;
-    border-top: rgb(14, 0, 94) 6px solid;
+  
+    gap: 5px;
+    border-top: 1px solid rgb(199, 191, 191);
 
 }
+.terms-conditions ul li{
+    color: #606060;;
+   font-size: 13px;
+ 
+ 
+}
+
+.left-sidebar .copyright p{
+    color: #606060;;
+
+ font-size: 13px; 
+ text-align: center;
+padding-right: 80px;
+padding-bottom: 10px;
+}
+  
+/* right section */
 main .right-part{
     display: grid;
-    grid-auto-flow: row;
-    background-color: yellow;
+   grid-template-rows: 50px auto;
+  
+   
 }
 main .head-section{
     background-color:white;
     height: 50px;
     border-top: 1px solid rgb(199, 191, 191);;
-    border-bottom: 1px solid rgb(199, 191, 191);;
+    border-bottom: 1px solid rgb(199, 191, 191);
+    overflow: auto;
+
 }
 main .head-section ul {
 display: grid;
@@ -385,7 +503,99 @@ main .head-section button{
     min-width: max-content;
 }
 main .right-part .section-videos{
-    background-color: tomato;
-    height: 100vmax;
+    background-color:#f9f9f9;;
+  
+    overflow: auto;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-content: start;
+    justify-content: center;
+    gap:16px ;
+  
+    padding:24px;
+    padding-top:;
+ 
 
 }
+/* video-1 */
+.section-videos .video-1{
+    display: grid;
+    grid-template-rows:auto auto;
+    padding-bottom: 30px;
+   
+  
+}
+.video-background{
+    height: 150px;
+    background-color: cyan;
+    background-image: url("https://i.ytimg.com/vi/T3GrQtkFW74/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDsLYYIFHyxwBwQNwyDN3YcXUMHGA");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.video-background p{
+  position: absolute;
+    font-size: 14px;
+    color: white;
+    text-align: end;
+   
+    padding-right: 7px;
+    font-weight: 550;
+    background-color:black;
+    width: 40px;
+    height:20px;
+    right: 3px;;
+    bottom: 3px;
+
+  
+    
+}
+.bottom-infos{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-content: start;
+    justify-content: start;
+    padding-top: 10px;
+  
+}
+
+
+.bottom-infos img{
+    border-radius: 50px;
+    justify-content: start;
+    width: 35px;
+    margin-top: 5px;
+
+   
+}
+.bottom-infos h2{
+   
+    font-size: 15px;
+    font-weight: ;
+   
+}
+.bottom-infos h3{
+    font-size: 13px;
+   color: #606060;
+   font-weight: 100px;
+}
+.bottom-infos p{
+  
+    font-size: 13px;
+    color: #606060;;
+}
+.video-infos{
+padding-top: 5px;
+    display: grid;
+   grid-auto-flow: row;
+   gap: 5px;
+
+}
+.video-one{
+    text-decoration: unset;
+    color: unset;
+}
+/* video-2 */
