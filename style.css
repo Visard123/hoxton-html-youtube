@@ -102,7 +102,7 @@ main .left-sidebar{
     grid-auto-flow: row;
     padding-top: 5px;
     background-color:white;
-    max-height: 1200px;
+    max-height: 1080px;
 
     overflow:auto;
 }
@@ -513,7 +513,7 @@ main .right-part .section-videos{
     align-content: start;
     justify-content: center;
     gap:16px ;
-  
+   
     padding:24px;
     padding-top:;
  
